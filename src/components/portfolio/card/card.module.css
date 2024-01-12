@@ -1,0 +1,42 @@
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgba(0, 0, 0, 0.5);
+  border-radius: 20px ;
+  width: 400px;
+  height: 400px; 
+  padding: 0 15px;
+  font-size: 1rem;
+  color: aliceblue;
+  visibility: hidden;
+}
+
+.link{
+  display: inline-block;
+  line-height: 50px;
+  color: black;
+  background-color: #FFC107;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.card{
+  width: 400px;
+  height: 400px;
+  background: url("../../../image/mountCard.jpg");
+  background-size: 400px 400px;
+  border-radius: 20px ;
+  display: flex;
+  align-items: center;
+}
+
+.card:hover > .text {
+  visibility: visible;
+  transition: 2s;
+}

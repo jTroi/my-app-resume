@@ -1,0 +1,120 @@
+.fullScreen{
+  min-height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fullScreenBody{
+flex: 1 1 auto;
+max-width: 50%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: aliceblue;
+}
+.nameTitle{
+  color: gold;
+  text-wrap:pretty;
+}
+.p{
+  padding: 0 50px 0 50px;
+}
+
+.link{
+  display: inline-block;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #FFC107;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  align-self: center;
+}
+.imageBody{
+  display: inline-flex;
+  max-width: 50%;
+
+}
+
+.image{
+  max-width: 600px;
+  max-height: 800px;
+  padding-right: 50px;
+  display: flex;
+  align-self: self-end;
+}
+
+@media (min-width: 100px) and (max-width: 599px) {
+  .fullScreen{
+    min-height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .imageBody{
+  display: inline-block;
+  }
+  .image{
+    display: none;
+  }
+  .fullScreenBody{
+    display: inline;
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 959px) {
+  .fullScreen{
+    min-height: 100vh;
+    margin-top: 80px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }  
+  .fullScreenBody{
+    display: inline-flex;
+    width: 100%;
+  }
+  .image{
+    max-width: 350px;
+    max-height: 500px;
+    padding-top: 40px;
+    display: flex;
+    align-self: self-end;
+  }
+  .nameTitle .p {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .fullScreen{
+    min-height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+/*   
+  .image{
+    max-width: 350px;
+    max-height: 400px;
+    padding-top: 40px;
+    display: flex;
+    align-self: self-end;
+  } */
+}
+@media (min-width: 1280px) and (max-width: 1919px) {
+
+}
+@media  (min-width: 1920px) {
+
+}

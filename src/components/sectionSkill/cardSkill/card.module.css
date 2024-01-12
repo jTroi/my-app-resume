@@ -1,0 +1,35 @@
+.cardBody{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(68, 68, 68);
+  border-radius: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBody:hover{
+  background-color: #FFC107;
+}
+
+@media (min-width: 100px) and (max-width: 599px) {
+  .cardBody{
+    width: 500px;
+    height: 360px;
+  }
+}
+@media (min-width: 600px) and (max-width: 959px) {
+  .cardBody{
+    width: 360px;
+    height: 300px;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .mySkillsCard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+  }
+}

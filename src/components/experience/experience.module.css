@@ -1,0 +1,48 @@
+.experience{
+  background: #3b3a3a;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: aliceblue;
+  padding-bottom: 80px;
+}
+
+.title{
+  display: flex;
+  font-size: 3rem;
+  margin-top: -40px;
+  color: aliceblue;
+}
+
+.text{
+  display: table;
+  width: 60%;
+  flex-direction: column;
+  align-items: start;
+  padding: 2% 40px;
+}
+
+.text > h2, h3{
+  margin-bottom: -8px;
+}
+
+.lineDecoration{
+  display: table-cell;
+  border-left: 1px solid #ffffff;
+  padding: 0 30px;
+}
+
+.lineDecoration > svg{
+  margin-top: -10px;
+  margin-left: -58px;
+  filter: drop-shadow(0 0 10px #FFC107);
+
+}
+
+.sectionText{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
