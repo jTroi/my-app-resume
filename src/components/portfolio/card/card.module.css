@@ -1,4 +1,24 @@
-.text{
+.card{
+  width: 400px;
+  height: 400px;
+  background: url("../../../common/image/mountCard.jpg");
+  background-size: 400px 400px;
+  border-radius: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover > .gif {
+  visibility: visible;
+  transition: 2s;
+}
+.card:hover > .text {
+  display: none;
+}
+
+.gif{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +31,13 @@
   font-size: 1rem;
   color: aliceblue;
   visibility: hidden;
+}
+.text{
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  color: aliceblue;
+  padding: 20px;
 }
 
 .link{
@@ -26,17 +53,3 @@
   align-self: center;
 }
 
-.card{
-  width: 400px;
-  height: 400px;
-  background: url("../../../image/mountCard.jpg");
-  background-size: 400px 400px;
-  border-radius: 20px ;
-  display: flex;
-  align-items: center;
-}
-
-.card:hover > .text {
-  visibility: visible;
-  transition: 2s;
-}

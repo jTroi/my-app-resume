@@ -14,10 +14,10 @@ function App() {
         <Header />
         <StartScreen />
         <About />
-        <SectionSkill />
+        {/* <SectionSkill />
         <SectionPortfolio />
         <SectionExperience />
-        <SectionContactMe />
+        <SectionContactMe /> */}
       </main>
       <footer>
         

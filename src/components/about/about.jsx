@@ -1,16 +1,30 @@
 import React from "react";
-import styleAbout from './about.module.css'
+import s from './about.module.css'
+import macBook from '../../common/image/macbook.jpg'
 
 const About = () => {
   return(
-    <div className={styleAbout.about}>
-      <section>
-        <h1 className={styleAbout.title}>About</h1>
-        <p className={styleAbout.text}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quia nam nisi at enim, labore hic vel quam maiores culpa, aut, eaque dolorum cum earum vero minima nostrum sint facere.
-          Magnam dolorem aliquid sapiente ipsa qui sequi debitis doloribus eaque repellat culpa, recusandae dignissimos ratione consequatur vitae pariatur quaerat quam exercitationem sint, corporis dolore molestiae consequuntur officiis tempora. Voluptatibus, ut!
-        </p>
-      </section>
+    <div className={s.about}>
+      <h1 className={s.title}>Обо мне</h1>
+        <div className={s.description}>
+          <section className={s.text}>
+            <p>
+              Здравствуйте! Меня зовут Константин, и&nbsp;я&nbsp;являюсь опытным веб-разработчиком с&nbsp;более чем трёхлетним стажем работы. За&nbsp;это время мне довелось работать над различными проектами, начиная от&nbsp;небольших сайтов-визиток и&nbsp;заканчивая крупными корпоративными порталами.
+            </p>
+            <p>
+              Я&nbsp;стремлюсь создавать качественные и&nbsp;инновационные решения, учитывая все требования заказчика. Моё главное преимущество&nbsp;&mdash; это умение работать в&nbsp;команде и&nbsp;находить общий язык с&nbsp;другими специалистами, такими как дизайнеры, маркетологи и&nbsp;SEO-специалисты.
+            </p>
+            <p>
+              Я&nbsp;всегда открыт к&nbsp;новым вызовам и&nbsp;готов взяться за&nbsp;проекты любой сложности. Если у&nbsp;вас есть какие-то вопросы или предложения, пожалуйста, свяжитесь со&nbsp;мной. Буду рад обсудить возможности сотрудничества!
+            </p>
+          </section>
+          <section className={s.image}>
+            <img
+              src={macBook}
+              alt="macBook"
+            />
+          </section>
+        </div>
     </div>
   )
 }
