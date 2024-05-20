@@ -25,28 +25,29 @@
   row-gap: 1em;
 }
 
-@media (min-width: 100px) and (max-width: 599px) {
+@media (max-width: 576px) {
+  .mySkills{
+    padding: 0;
+  }
   .mySkillsCard{
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 1.5em;
-    align-self: center;
   }
 }
-@media (min-width: 600px) and (max-width: 959px) {
+
+@media (min-width: 576px) and (max-width: 767px) {
   .mySkillsCard{
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
   }
 }
-@media (min-width: 960px) and (max-width: 1279px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
   .mySkillsCard{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .mySkillsCard{
+    grid-template-columns: repeat(3, 1fr);
   }
 }

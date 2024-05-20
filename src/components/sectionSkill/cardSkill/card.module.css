@@ -1,6 +1,6 @@
 .cardBody{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
   background-color: rgb(68, 68, 68);
   border-radius: 20px ;
   display: flex;
@@ -13,23 +13,23 @@
   background-color: #FFC107;
 }
 
-@media (min-width: 100px) and (max-width: 599px) {
+@media (max-width: 576px) {
   .cardBody{
-    width: 500px;
-    height: 360px;
+    width: 140px;
+    height: 130px;
   }
 }
-@media (min-width: 600px) and (max-width: 959px) {
+
+@media (min-width: 576px) and (max-width: 767px) {
   .cardBody{
-    width: 360px;
-    height: 300px;
+    width: 165px;
+    height: 165px;
   }
 }
-@media (min-width: 960px) and (max-width: 1279px) {
-  .mySkillsCard{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cardBody{
+    width: 192px;
+    height: 192px;
   }
 }

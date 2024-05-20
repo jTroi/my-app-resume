@@ -1,55 +1,85 @@
 .card{
   width: 400px;
   height: 400px;
-  background: url("../../../common/image/mountCard.jpg");
-  background-size: 400px 400px;
-  border-radius: 20px ;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.card:hover > .gif {
+.text:hover > .link {
   visibility: visible;
-  transition: 2s;
-}
-.card:hover > .text {
-  display: none;
 }
 
-.gif{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color:  rgba(0, 0, 0, 0.5);
-  border-radius: 20px ;
-  width: 400px;
-  height: 400px; 
-  padding: 0 15px;
-  font-size: 1rem;
-  color: aliceblue;
-  visibility: hidden;
-}
 .text{
   display: flex;
-  font-size: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.3rem;
   align-items: center;
   color: aliceblue;
   padding: 20px;
 }
 
+.example{
+  visibility: hidden;
+}
+
 .link{
-  display: inline-block;
   line-height: 50px;
   color: black;
   background-color: #FFC107;
   text-decoration: none;
   letter-spacing: 1px;
   padding: 0 20px;
-  margin-top: 40px;
+  margin-bottom: 10px;
   border-radius: 10px;
-  align-self: center;
+  visibility: hidden;
+
+}
+@media (max-width: 576px) {
+  .card{
+    width: 280px;
+    height: 280px;
+  }
+  .text{
+    font-size: 0.9rem;
+  }
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .card{
+    width: 250px;
+    height: 250px;
+  }
+  .text{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card{
+    width: 300px;
+    height: 300px;
+  }
+  .text{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .card{
+    width: 300px;
+    height: 300px;
+  }
+  .text{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+}

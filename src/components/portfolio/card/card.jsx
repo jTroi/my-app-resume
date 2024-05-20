@@ -1,13 +1,25 @@
-import styleCard from './card.module.css'
+import s from './card.module.css'
 
 const CardPortfolio = (props) => {
 
   return(
-    <div className={styleCard.card}>
-      <p className={styleCard.text}> 
-        { props.text }
-      </p>
-      <div className={styleCard.gif}></div>
+    <div className={s.card}
+     style={{ 
+          background: `url(${props.image})`,
+          backgroundSize: 'contain'
+        }}
+    >
+      <div className={s.text}>
+        <p> 
+          { props.text }
+        </p>
+          <a
+            className={s.link}
+            href={props.link}
+          >
+            Подробнее
+          </a>
+      </div>
   </div>
   )
 };
