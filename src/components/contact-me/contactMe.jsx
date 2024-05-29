@@ -16,11 +16,15 @@ const SectionContactMe = () => {
         </button>
         <button className={styleContactMe.btn}>
           <Icon path={mdiSendVariantOutline} size={1} rotate={-25}/>
-          Telegram
+          <a href="https://t.me/jTroi_dev">
+            Telegram
+          </a>
         </button>
         <button className={styleContactMe.btn}>
           <Icon path={mdiGithub} size={1}/>
-          GitHub
+          <a href="hhttps://github.com/jTroi">
+            GitHub
+          </a>
         </button>
       </div>
     </section>

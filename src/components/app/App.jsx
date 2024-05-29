@@ -17,7 +17,7 @@ function App() {
         <SectionSkill />
         <SectionPortfolio />
         <SectionExperience />
-        {/* <SectionContactMe /> */}
+        <SectionContactMe />
       </main>
       <footer>
         
