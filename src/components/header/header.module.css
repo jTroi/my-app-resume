@@ -1,21 +1,19 @@
 header {
   color: #FFC107;
-  min-height: 80px;
-  max-width: 1280px;
-  padding: 10px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
-  position: fixed;
-  background: rgba(42, 42, 42, 0.474);
+  background: rgba(42, 42, 42, 0.85);
 }
 .logo {
   display: block;
   font-size: 2em;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .menuToggle {
@@ -23,14 +21,12 @@ header {
   background: none;
   border: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .mainMenu{
   display: flex;
-  justify-content: space-around;
-  align-self: center;
-  list-style: none;
-
+  padding-right: 20px;
 }
 
 .ul {
@@ -39,15 +35,50 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 50px;
 }
 
 .li {
   padding: 10px;
   cursor: pointer;
 }
+.li:hover{
+  background: #FFC107;
+  color: #2a2a2a;
+}
 
-@media (min-width: 600px) and (max-width: 959px){
+@media (max-width: 576px) {
+  header {
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    background: rgb(42, 42, 42);
+  }
+  .mainMenu{
+    display: none;
+  }
+  
+  .openMenu{
+    position: absolute;
+    top: 0;
+    margin-top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 42, 42, 0.85);
+  } 
+
+  .menuToggle{
+    display: flex;
+    padding: 0;
+  }
+  .ul{
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
   header {
     left: 0;
     width: 100%;
@@ -73,13 +104,17 @@ header {
   .menuToggle{
     display: flex;
     padding: 0;
-    margin-right: 50px;
   }
   .ul{
     display: block;
   }
 }
-@media (min-width: 960px) and (max-width: 1279px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
   .image{
     max-width: 450px;
     max-height: 600px;
@@ -87,4 +122,8 @@ header {
     display: flex;
     align-self: self-end;
   }
+}
+
+@media (min-width: 1280px) {
+
 }
